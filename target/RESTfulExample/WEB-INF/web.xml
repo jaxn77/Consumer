@@ -17,10 +17,21 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>IndexController</display-name>
+		<servlet-name>IndexController</servlet-name>
+		<servlet-class>com.mkyong.conroller.IndexController</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IndexController</servlet-name>
+		<url-pattern>/IndexController</url-pattern>
 	</servlet-mapping>
 
 </web-app>
